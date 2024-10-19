@@ -1,0 +1,70 @@
+#include <Arduino.h>/*
+const int ledChannel = 0;
+const int ledPin = 25;
+const int frequency = 38000;
+const int resolution = 8;
+*/
+#define S0 4
+#define S1 25
+#define S2 26
+#define S3 27
+#define SIG 14
+byte dir[16] = {B00000000,
+B00000001,
+B00000010,
+B00000011,
+B00000100,
+B00000101,
+B00000110,
+B00000111,
+B00001000,
+B00001001,
+B00001010,
+B00001011,
+B00001100,
+B00001101,
+B00001110,
+B00001111};
+void mul(byte pin_state, byte s0, byte s1, byte s2, byte s3){
+//byte tem;
+digitalWrite(s0, (pin_state & B00000001));
+digitalWrite(s1, ((pin_state>>1) & B00000001));
+digitalWrite(s2, ((pin_state>>2) & B00000001));
+digitalWrite(s3, ((pin_state>>3) & B00000001));
+}
+void setup() {
+  Serial.begin(115200);
+  pinMode(S0, OUTPUT);
+  pinMode(S1, OUTPUT);
+  pinMode(S2, OUTPUT);
+  pinMode(S3, OUTPUT);
+  pinMode(SIG, OUTPUT);
+  digitalWrite(SIG, 1);
+  //pinMode(23, OUTPUT);/*
+  //ledcSetup(ledChannel, frequency, resolution);
+  //ledcAttachPin(ledPin, ledChannel);
+ //delay(100);
+  //ledcWrite(ledChannel, 125);*/
+}
+
+void loop() {
+  for(int x = 0; x < 16; x++){
+    mul(dir[x], S0, S1, S2, S3);
+    Serial.print(digitalRead(S0));
+    Serial.print(digitalRead(S1));
+    Serial.print(digitalRead(S2));
+    Serial.println(digitalRead(S3));
+    delay(500);
+  }
+  //mul(B00000000, S0, S1, S2, S3);
+  /*
+  ledcWrite(ledChannel, 160);
+  delayMicroseconds(600);
+  ledcWrite(ledChannel, 0);
+  delayMicroseconds(600);
+*/
+  
+ // Serial.println("uwu");
+  
+ //hdelay(500);
+}
