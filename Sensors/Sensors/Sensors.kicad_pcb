@@ -1,0 +1,6094 @@
+(kicad_pcb
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(general
+		(thickness 1.6)
+		(legacy_teardrops no)
+	)
+	(paper "A4")
+	(layers
+		(0 "F.Cu" signal)
+		(31 "B.Cu" signal)
+		(32 "B.Adhes" user "B.Adhesive")
+		(33 "F.Adhes" user "F.Adhesive")
+		(34 "B.Paste" user)
+		(35 "F.Paste" user)
+		(36 "B.SilkS" user "B.Silkscreen")
+		(37 "F.SilkS" user "F.Silkscreen")
+		(38 "B.Mask" user)
+		(39 "F.Mask" user)
+		(40 "Dwgs.User" user "User.Drawings")
+		(41 "Cmts.User" user "User.Comments")
+		(42 "Eco1.User" user "User.Eco1")
+		(43 "Eco2.User" user "User.Eco2")
+		(44 "Edge.Cuts" user)
+		(45 "Margin" user)
+		(46 "B.CrtYd" user "B.Courtyard")
+		(47 "F.CrtYd" user "F.Courtyard")
+		(48 "B.Fab" user)
+		(49 "F.Fab" user)
+		(50 "User.1" user)
+		(51 "User.2" user)
+		(52 "User.3" user)
+		(53 "User.4" user)
+		(54 "User.5" user)
+		(55 "User.6" user)
+		(56 "User.7" user)
+		(57 "User.8" user)
+		(58 "User.9" user)
+	)
+	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "core")
+				(thickness 1.51)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
+		(pad_to_mask_clearance 0)
+		(allow_soldermask_bridges_in_footprints no)
+		(pcbplotparams
+			(layerselection 0x00010fc_ffffffff)
+			(plot_on_all_layers_selection 0x0000000_00000000)
+			(disableapertmacros no)
+			(usegerberextensions no)
+			(usegerberattributes yes)
+			(usegerberadvancedattributes yes)
+			(creategerberjobfile yes)
+			(dashed_line_dash_ratio 12.000000)
+			(dashed_line_gap_ratio 3.000000)
+			(svgprecision 6)
+			(plotframeref no)
+			(viasonmask no)
+			(mode 1)
+			(useauxorigin no)
+			(hpglpennumber 1)
+			(hpglpenspeed 20)
+			(hpglpendiameter 15.000000)
+			(pdf_front_fp_property_popups yes)
+			(pdf_back_fp_property_popups yes)
+			(dxfpolygonmode yes)
+			(dxfimperialunits yes)
+			(dxfusepcbnewfont yes)
+			(psnegative no)
+			(psa4output no)
+			(plotreference yes)
+			(plotvalue yes)
+			(plotfptext yes)
+			(plotinvisibletext no)
+			(sketchpadsonfab no)
+			(subtractmaskfromsilk no)
+			(outputformat 1)
+			(mirror no)
+			(drillshape 1)
+			(scaleselection 1)
+			(outputdirectory "")
+		)
+	)
+	(net 0 "")
+	(net 1 "/SRCLK")
+	(net 2 "/RCLK")
+	(net 3 "VCC")
+	(net 4 "/Y0")
+	(net 5 "/Y1")
+	(net 6 "/SER")
+	(net 7 "/Y2")
+	(net 8 "/Y3")
+	(net 9 "GND")
+	(net 10 "/Y5")
+	(net 11 "Net-(Q2-K)")
+	(net 12 "Net-(Q3-K)")
+	(net 13 "/Y4")
+	(net 14 "Net-(Q8-K)")
+	(net 15 "Net-(Q9-K)")
+	(net 16 "Net-(Q11-K)")
+	(net 17 "Net-(Q14-K)")
+	(net 18 "/IN1")
+	(net 19 "/IN2")
+	(net 20 "/OUT1")
+	(net 21 "/OUT2")
+	(net 22 "/Y6")
+	(net 23 "Net-(Q1-K)")
+	(net 24 "/Y7")
+	(net 25 "Net-(Q4-K)")
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "051562b1-d497-4256-8d17-ed3fdd790126")
+		(at 246.52 80.648)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R5"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "9b423ae8-3160-4dac-a683-b9ef0971c2e5")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b72f5afb-77f4-4aef-821f-b789554e7f1b")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee33ac8c-94d8-43f4-82c0-220058f85852")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "101cd3ed-97d6-4f24-a83e-0a20c33462c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "22a43b57-d0bb-49d8-ae58-6df68bd849ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/448365bd-aa32-4cf1-87f9-bb95899f1be8")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b357338f-4837-4f65-b8b9-0f7d97621dac")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3067dcc6-bbd7-45d4-905d-621559056b9a")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e7059128-c4b5-4525-b8b7-a73845155011")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4636068c-7122-4a86-b86f-4c8390166887")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c9782b9d-b045-4fa8-a198-5d9e3674bcf6")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8ac9dfd0-5c2a-4dac-ad46-433407566a66")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 24 "/Y7")
+			(pintype "passive")
+			(uuid "2ee1e70d-ff70-4e13-bfa5-fad827e8ecf2")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "17571a61-aeb2-4815-ba42-1a600aea46cc")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:TCRT5000L"
+		(layer "F.Cu")
+		(uuid "08bd246c-19c8-4d88-989b-5fee53f0e553")
+		(at 188.27 63.75 90)
+		(descr "TCRT5000L")
+		(tags "Integrated Circuit")
+		(property "Reference" "Q4"
+			(at -0.432 -0.015 -90)
+			(layer "F.SilkS")
+			(uuid "191d04c9-7f71-4c06-9641-167416e8651f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "TCRT5000"
+			(at -0.432 -0.015 -90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "dd276da7-03bf-4d16-8b62-c7189232d151")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:TCRT5000L"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dac412cb-f9ea-40fd-88b9-e709014b6271")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/83760/tcrt5000.pdf"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28b0badb-b445-4e5b-8e52-6fd1c736763a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VISHAY - TCRT5000. - SENSOR, OPTICAL, TRANSISTOR O/P"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2a703d00-d67a-4aa5-b8e6-2af296959641")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "6.8"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db5c7d41-4f4d-4116-b3d1-e7b0a8606457")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ce3e5de4-a0c6-446b-a9d4-9ef017e04b76")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TCRT5000"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa25d093-f3b2-4102-9ef8-9377e2153dc9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "782-TCRT5000"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1896908-7405-43b4-9b9e-97c8e6bde829")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TCRT5000?qs=glpcD2KT6uaaYldHGIIt5g%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2ab34900-216f-4bbf-af43-a95bd7dc98a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Part Number" "TCRT5000"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a873f755-39b2-4d07-a8f5-8e87797aa4b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/tcrt5000/vishay?region=nac"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd5c32f2-71bf-439d-a635-22c7a09de0db")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Testing Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e33470f4-e32a-4408-ba0d-69a0b930cc6c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Testing Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2bdbd14f-f258-4747-a37a-bcdd9b798084")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/77f84400-9bb3-4925-9d63-e67d421ff6b2")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 5.1 -2.9)
+			(end 1.5 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "694a93ff-c788-4e61-ae2a-028f35bc6018")
+		)
+		(fp_line
+			(start -5.1 -2.9)
+			(end -1.5 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5fb1e314-af9e-48d5-9b99-7b25ef4e3fcf")
+		)
+		(fp_line
+			(start -5.1 -2.9)
+			(end -5.1 1.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "cc46b779-8c6b-47b1-b6f9-0c3991e7dc41")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "68a46e55-53d5-45e4-885a-d542b4b0fc22")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end 1.5 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d87a795d-d16b-462a-af95-1762e0724e0d")
+		)
+		(fp_line
+			(start -1.5 2.9)
+			(end -4.1 2.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "6f0e2dfe-edb6-4db0-b45d-1ff1fa83be1d")
+		)
+		(fp_circle
+			(center -2.79 -3.492)
+			(end -2.79 -3.434)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "562e78be-69f8-4574-80bc-39b25b324ae9")
+		)
+		(fp_line
+			(start 5.1 -2.9)
+			(end 5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4dd29fff-d9c8-4060-9a68-bd93f5b2af3e")
+		)
+		(fp_line
+			(start -5.1 -2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4d814596-39cd-4ae6-b138-1c9894cadeda")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7b57c5d7-84e8-4971-962b-f2c61ed91084")
+		)
+		(fp_line
+			(start -5.1 2.9)
+			(end -5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4fa38aee-649a-4085-b7fe-a0e7b543ac08")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -0.432 -0.015 -90)
+			(layer "F.Fab")
+			(uuid "2b214d86-5cea-4bc2-b981-788776da5a63")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at -4.65 2.45 90)
+			(size 1 1)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(uuid "100343db-8cb5-4f9a-b6a9-2a6668c5093c")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 -1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "117333b0-d0f2-47e5-b67b-3ae6d7c4e874")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "85644a72-5696-42a9-8a29-bf29cac8a062")
+		)
+		(pad "1" thru_hole circle
+			(at -2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "C")
+			(pintype "passive")
+			(uuid "ea46a062-732f-4f81-9e20-d3dbae13e17e")
+		)
+		(pad "2" thru_hole circle
+			(at -2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 24 "/Y7")
+			(pinfunction "E")
+			(pintype "passive")
+			(uuid "9b7e3d2c-0e9a-42ec-b658-7126ad3d9fa5")
+		)
+		(pad "3" thru_hole circle
+			(at 2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 25 "Net-(Q4-K)")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "de08972f-df9f-455a-87ad-3afc90df1bdf")
+		)
+		(pad "4" thru_hole circle
+			(at 2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "e02bf5a0-ef9a-48f5-bfc2-9295817aa7d4")
+		)
+		(model "TCRT5000L.stp"
+			(offset
+				(xyz -3.539999909 5.550000107 9.970000117)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -180 0 0)
+			)
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "0fe6f3c6-8f1c-4383-b66b-82bac71e5e43")
+		(at 246.52 110.968)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R23"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "99461398-3116-4261-971f-4c804bee1c67")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "712cf891-a066-43fe-8917-59eccd3cb63c")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b16253ed-d0e6-4e99-84c8-4c83083727cf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a3c40765-f37c-4c71-94de-a94433ab9c45")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dca60b32-0a2b-42d5-88da-bdfe7881a119")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/03be1876-df16-49e4-95a4-42d906d509eb")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fc2ae961-606a-43a8-b5e9-206372dcb188")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "21a90dba-977b-4484-af42-c975784e6ccc")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "dc611e8b-f4e6-4736-bcd5-d1c23614e45c")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f63abc1a-7146-447c-b43b-e69e752e3c17")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "81e589d4-bf7f-4ec7-988e-78a3d0418dc4")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "46134e65-cb8c-4ccc-a23b-e3d1c48cda42")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 7 "/Y2")
+			(pintype "passive")
+			(uuid "3283f8bb-5653-4b12-a46c-53790eec9100")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "871de2b1-d163-497e-b760-3b661714319e")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "1d7ce9a9-3c0e-4189-96e0-e3b4eda89496")
+		(at 246.52 95.808)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R11"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "034eef9b-df6c-49f1-9665-7e715ebf89e0")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d4a16195-da8d-4104-a852-c033c0e18e77")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1109324-cb33-4862-a464-de6cd1b99369")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "038f16f8-bab2-4e8c-8375-b9748b653107")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c74aaed-af17-4d5d-9d10-ee57d85e752e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/d93650d0-fc73-45cb-9fce-5020b2569b8b")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "92e9dfbf-0cdb-4c33-a559-564df48b85a9")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "742a3f5f-d7d3-454e-be83-c0505e0b055e")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f90ed643-5e38-410a-aa4a-bb8d84160252")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1f17f511-44ca-4878-8f33-6519ba010662")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "212abe4e-6d03-49c1-baf4-47c1aaa10991")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "41e3e740-d749-4756-857b-1ca5eeb47252")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 10 "/Y5")
+			(pintype "passive")
+			(uuid "69069f2b-af29-43e0-a186-6352fc1ad9a6")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "2913779d-74b1-4443-91ed-0b21bd31f4e9")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "24c5ac51-af71-4b6f-ae2f-4dd2025bb189")
+		(at 246.52 114)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R26"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "8cc91df8-5822-4c98-bec9-06def5b984f1")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0cf0b5dd-339f-4572-912e-e45a440f9c7d")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a10b7fd1-f058-48b4-8b19-e22ffba7c517")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16213b99-d5f3-4134-abf5-46853f6b7c71")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "991547f7-d752-49d7-b374-e9aea035414d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/be0748f6-86d6-4c08-9832-fb2962cacd8e")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6848902a-6190-4a57-83cd-166a831cd0f0")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ba88eef9-3db6-46a4-8b80-76f44962e963")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "642056dd-9448-4817-a71b-9571d723e728")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f114f1f7-0a70-4bcd-b5cf-71452f25a524")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7b838bcb-1e2b-401b-bdb8-4e3f86ecec5f")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9c1a48e3-4d20-4352-a2e6-cae5ead4ca5e")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "cbd4d667-2dc4-495a-9234-cb72614dacc2")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 17 "Net-(Q14-K)")
+			(pintype "passive")
+			(uuid "a16b717e-e902-4493-86d5-ca24b79815b5")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "2907cbf6-8741-45af-a2b8-3749f5ce6077")
+		(at 246.52 98.84)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R14"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "d6a95e28-f282-4b3d-b78b-5f8e564b11a4")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d90d268c-8285-4fc7-b2c6-5be50bea07b9")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f5567181-ffc6-4ed1-9bab-e8135a6f40ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6dfbeabd-a008-4037-a6bc-1f58827a4e67")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ddff038-8cce-4895-968b-23532cc6fbe5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/ce212603-f8b7-4750-ac63-53727de32359")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5128625f-f3f7-47aa-9ce4-761a84771b17")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "728fc2c9-177b-45ba-9a8f-e1b0a038bbe4")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f0fdea82-8a2e-49b1-b9b9-c52749919f1a")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "010ce5c1-58eb-40b0-8072-6e9bd0b1ecb5")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5a915353-df56-47ac-b467-b548df21eb94")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "08cf8ec8-39b7-4e93-af0f-fcacf4db9ac5")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "bf95bc74-b79b-43fc-bf80-d8f0549f4d4c")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 14 "Net-(Q8-K)")
+			(pintype "passive")
+			(uuid "0d533097-28c6-440c-9533-884021918581")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "2b19d8a4-37aa-481b-a7aa-5bbe04bbd933")
+		(at 246.52 86.712)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R7"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "05f27541-ba7f-46bc-8a18-cd34dd31105d")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8aa3b710-7db7-4c61-a12c-d70900fa3b60")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7021bf43-0778-47db-a417-15823ac57707")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a3806566-66b9-49c7-be23-f9ef2089939c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "538cdcaa-e3d5-4938-b089-d5682aee25e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/7a3e20e6-ef3f-4a83-8b27-8af8680288da")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "79e7142a-7367-440c-a989-98da26f7096b")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e3929fa0-b76d-41bb-8333-8cf8ffd547a8")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9db6a2d5-6287-4dc1-beb6-e73cf20ffe45")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "dd862915-cb3e-4a08-8da3-20f299cefe2c")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "21064fa6-e918-4ae9-acc0-0ec7a8538917")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "578e472a-2ea9-48ae-a22c-d899d54058d3")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "b0fc6bc7-3f5b-408b-bf26-839dbacd64dc")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 12 "Net-(Q3-K)")
+			(pintype "passive")
+			(uuid "356218a2-55bc-4f8b-94c5-c30af1f763bb")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "30177b75-b3d9-4433-98fd-605885fbb400")
+		(at 246.52 74.584)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R3"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "f01d98c0-2dd5-4e38-abe5-a1db46e37786")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1b7432b4-59ca-4341-9c34-d554f97910b6")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "117b1429-aa6f-4998-a945-4f754f88d7fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "299ea048-9bc7-4c75-8aca-8b62aa401c17")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af68d445-5e74-4071-a3ea-60826a8ea6bc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/bbd34be3-2206-4194-8a35-ba794b30d0c3")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "481a9483-55fe-499b-a408-0e6d422a694b")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "af0e9305-e2ff-4e91-a848-70e606daec61")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ddc6b8e8-a633-428f-a7ae-aac9c2eed377")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4ae6826c-2656-4b1f-b7cc-c9122b3e5d9c")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7533a503-6418-4245-b83e-85c4e9828edd")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b217023e-a5b4-48ed-b344-33d499959591")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 22 "/Y6")
+			(pintype "passive")
+			(uuid "4f957c6c-a688-4b00-8154-aca1b40e0565")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "ccb157d9-803d-4b08-ab3c-db3166f67a4b")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:TCRT5000L"
+		(layer "F.Cu")
+		(uuid "3291d71b-be93-4053-bdd1-c9b139f11c26")
+		(at 175.574284 63.75 90)
+		(descr "TCRT5000L")
+		(tags "Integrated Circuit")
+		(property "Reference" "Q1"
+			(at -0.432 -0.015 -90)
+			(layer "F.SilkS")
+			(uuid "41cb9597-c3e9-41d0-8ee7-5f0512fe8280")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "TCRT5000"
+			(at -0.432 -0.015 -90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3d98637d-1363-4f5a-92b2-9b55e0f22c8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:TCRT5000L"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fdd8bcbe-159e-48b1-a76f-e2958c7cd34e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/83760/tcrt5000.pdf"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "42b7dd4b-c51b-438b-8a22-15e6be8e2081")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VISHAY - TCRT5000. - SENSOR, OPTICAL, TRANSISTOR O/P"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e870aaef-3399-4bf5-b61d-c5fd12d68ded")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "6.8"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a016cdca-ae79-4710-8eb6-0f9e693526d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "99fcd808-eb85-4e5f-b6c9-2ea08079f942")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TCRT5000"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2954f336-9700-448d-bb9b-51aab7f214f6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "782-TCRT5000"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "18ebdedf-4bba-4aba-85c4-e19fdfa64eb5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TCRT5000?qs=glpcD2KT6uaaYldHGIIt5g%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e10e454-2f9a-4e32-9b40-82a47492f1f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Part Number" "TCRT5000"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ecdc2d9b-de6b-4b35-b721-e8efa0cc5aa6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/tcrt5000/vishay?region=nac"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8710565c-d0b9-4b2c-a47f-56f298609540")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Testing Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "62cd12f6-77c3-476d-9500-0e37a17b3975")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Testing Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b23cc12-f465-4604-be21-baf3624b5518")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/ab88dc8b-618a-4854-a5aa-7a941269ec24")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 5.1 -2.9)
+			(end 1.5 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "876ab301-799a-452a-8f0b-1936c23146f6")
+		)
+		(fp_line
+			(start -5.1 -2.9)
+			(end -1.5 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "701a15fe-562a-4d9f-89e9-8577dd978628")
+		)
+		(fp_line
+			(start -5.1 -2.9)
+			(end -5.1 1.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "49de8abe-d767-4192-9912-94b81792eca9")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a311c66f-2348-4e2c-b335-098e2b33e256")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end 1.5 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5a338657-90b9-444b-8d73-53d1e0c0c20f")
+		)
+		(fp_line
+			(start -1.5 2.9)
+			(end -4.1 2.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "a6789036-b1fb-43a6-a24d-ff908e045dd4")
+		)
+		(fp_circle
+			(center -2.79 -3.492)
+			(end -2.79 -3.434)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "011dac32-9836-4483-8264-0ec9416127f9")
+		)
+		(fp_line
+			(start 5.1 -2.9)
+			(end 5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "454b4c69-3e14-410f-b86a-14b99bc68b06")
+		)
+		(fp_line
+			(start -5.1 -2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4d5ab8ce-3748-48e9-a8ed-415be76de83b")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "785fde0c-0cf2-46ff-a722-8908f9239464")
+		)
+		(fp_line
+			(start -5.1 2.9)
+			(end -5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "dcc2edc6-9b40-4f0e-9cb7-fdd8296d9bf6")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -0.432 -0.015 -90)
+			(layer "F.Fab")
+			(uuid "c56db584-8b73-41dd-b490-91e987a21071")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at -4.65 2.45 90)
+			(size 1 1)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(uuid "beaedd89-651a-4aba-8a9a-0f49a021f808")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 -1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "bd6ce22a-840a-4503-b15f-8811254e924d")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "cf04cdeb-591b-4ff5-8add-ba4bd57ed0cd")
+		)
+		(pad "1" thru_hole circle
+			(at -2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "C")
+			(pintype "passive")
+			(uuid "5dd78953-768f-493a-90f1-acf3cebf669e")
+		)
+		(pad "2" thru_hole circle
+			(at -2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 22 "/Y6")
+			(pinfunction "E")
+			(pintype "passive")
+			(uuid "af0d31d3-5317-41dc-b976-d2a02881eac7")
+		)
+		(pad "3" thru_hole circle
+			(at 2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 23 "Net-(Q1-K)")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "45e3caf6-9881-424b-9e2d-44c572a9e889")
+		)
+		(pad "4" thru_hole circle
+			(at 2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "bdfb233f-dc16-454d-a76e-e15414d80969")
+		)
+		(model "TCRT5000L.stp"
+			(offset
+				(xyz -3.539999909 5.550000107 9.970000117)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -180 0 0)
+			)
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "3e36fe6f-2645-4231-bab6-e07f50ecf9bb")
+		(at 246.52 101.872)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R15"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "6488d51f-fc50-46a3-9841-8c03bccf63f5")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c556ca4d-ed04-4378-afb9-c75f9d5bcde7")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c7561145-c9bf-46e8-bd01-7bba01251bd2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "01b26f2d-bb04-4c3d-8d88-709d79fa804b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ebef8434-3d51-4dc8-82dc-c595a41d9d49")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/093b1f40-a7c2-4ef4-a092-92c6041e60e3")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8a195d2a-4796-4f08-886e-0e99c29802b9")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "38562fd9-0452-4db0-ae03-68511609228e")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4f057fb6-cb59-4966-846e-79279604af3d")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3dd4f9bc-572d-4d30-89f9-b31bace69f62")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7f65fb9e-8b5b-4ab8-8015-990fc25e431a")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e7a6f578-159d-4a55-af18-349704865467")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "796bfcce-d80e-45f5-baec-2e1c929e319c")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 15 "Net-(Q9-K)")
+			(pintype "passive")
+			(uuid "6fc37f8f-a2c2-4af2-a15b-8c899254a8dc")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "4d622dfd-2851-419b-aa6d-b2586a9c1fa6")
+		(at 246.52 92.776)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R10"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "5067477e-fef3-4aba-8a5d-d35963329198")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d1771458-b1d4-4ef9-9ad1-0241801cd523")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d72c97b6-b497-44fc-9b14-3b141e69e37e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "61d50e32-b7f4-4706-b4b8-4e34129058d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cd1ddffe-2c99-47ae-8e32-be57e73c3bb3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/5e9c1f38-dbd5-4239-98d3-928e5cd6c9f1")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "89e34f9e-b47c-4100-8e4b-400c3fbab1a5")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c76ef911-d40a-44e3-944f-05b9f8b539fb")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "19251a32-1257-4685-b018-f342c8a62f63")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c27fd8f3-0c8e-4f42-9c49-388b99347285")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "32552bb5-582e-44ed-ab59-297ad0bae0e5")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9fce4a55-2ef6-4d4a-a3f1-5bfc31f9eef5")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 5 "/Y1")
+			(pintype "passive")
+			(uuid "e81acfc4-3e68-40c3-8dad-9ef56765d90f")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "df60a339-dfe1-4313-9031-a92b36f191d3")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:PIN_STRIP_9"
+		(layer "F.Cu")
+		(uuid "4f1062af-022c-4d7b-ba24-604f71145572")
+		(at 152.14 30.7)
+		(property "Reference" "J1"
+			(at 0 -2.54 0)
+			(layer "F.SilkS")
+			(uuid "d42d8a9e-0915-4d3d-884a-3594b3cac326")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "CONN_01X09"
+			(at 0.66 -6.5 0)
+			(layer "F.Fab")
+			(uuid "db7d9db4-f0ba-4f95-8474-d2b37ef85e19")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:PIN_STRIP_9"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0afaa0af-197a-46d1-ad7e-db030cea2d8b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b841b778-62e9-40e2-9a3d-d5a310393785")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd817fcb-9f0c-4552-be37-0ce4e0a7b175")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/119dae68-68b9-4ba3-85d3-87f26220f927")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -11.43 -1.27)
+			(end 11.43 -1.27)
+			(stroke
+				(width 0.3048)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1675f6da-4342-4acc-8470-5d6300018f12")
+		)
+		(fp_line
+			(start -11.43 1.27)
+			(end -11.43 -1.27)
+			(stroke
+				(width 0.3048)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9c69b03a-a728-47db-b524-d61eb3e33f9c")
+		)
+		(fp_line
+			(start -8.89 -1.27)
+			(end -8.89 1.27)
+			(stroke
+				(width 0.3048)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c0b53bc4-f566-4b9d-a05e-883345278443")
+		)
+		(fp_line
+			(start 11.43 -1.27)
+			(end 11.43 1.27)
+			(stroke
+				(width 0.3048)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4c936337-425a-4fad-84e9-058687c19a18")
+		)
+		(fp_line
+			(start 11.43 1.27)
+			(end -11.43 1.27)
+			(stroke
+				(width 0.3048)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "85c6f45a-0d9a-43c5-b8fb-17ab94939f9a")
+		)
+		(pad "1" thru_hole rect
+			(at -10.16 0)
+			(size 1.75 2.19964)
+			(drill 1.00076)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pintype "passive")
+			(uuid "f9792d29-3703-4240-9e54-eef4eb9e79c8")
+		)
+		(pad "2" thru_hole oval
+			(at -7.62 0)
+			(size 1.75 2.19964)
+			(drill 1.00076)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 18 "/IN1")
+			(pintype "passive")
+			(uuid "70fd732b-5225-4141-b0f0-deea49c8f11c")
+		)
+		(pad "3" thru_hole oval
+			(at -5.08 0)
+			(size 1.75 2.19964)
+			(drill 1.00076)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 19 "/IN2")
+			(pintype "passive")
+			(uuid "5cd86959-d60b-4d5d-960f-b6e597b77787")
+		)
+		(pad "4" thru_hole oval
+			(at -2.54 0)
+			(size 1.75 2.19964)
+			(drill 1.00076)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 6 "/SER")
+			(pintype "passive")
+			(uuid "afd3b5f4-296b-4a60-9c41-869c3ed5a1b6")
+		)
+		(pad "5" thru_hole oval
+			(at 0 0)
+			(size 1.75 2.19964)
+			(drill 1.00076)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 1 "/SRCLK")
+			(pintype "passive")
+			(uuid "9ffa9655-bbe3-44a3-b3da-74db5c0a2b71")
+		)
+		(pad "6" thru_hole oval
+			(at 2.54 0)
+			(size 1.75 2.19964)
+			(drill 1.00076)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 2 "/RCLK")
+			(pintype "passive")
+			(uuid "82181f33-5b21-4183-8191-cad67f9ab801")
+		)
+		(pad "7" thru_hole oval
+			(at 5.08 0)
+			(size 1.75 2.19964)
+			(drill 1.00076)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 20 "/OUT1")
+			(pintype "passive")
+			(uuid "c444fb42-925b-4b95-a19f-3bac8dd453e6")
+		)
+		(pad "8" thru_hole oval
+			(at 7.62 0)
+			(size 1.75 2.19964)
+			(drill 1.00076)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 21 "/OUT2")
+			(pintype "passive")
+			(uuid "8ebc3d97-32c9-4882-9b95-319819eb67ec")
+		)
+		(pad "9" thru_hole oval
+			(at 10.16 0)
+			(size 1.75 2.19964)
+			(drill 1.00076)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "fca481ec-d8fc-4c55-a8c7-aabf29a8f5f2")
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "596311d8-b453-4d96-bb6f-c17e3293e8d0")
+		(at 246.52 83.68)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R6"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "bd146f00-623d-4cf7-9705-ae6a09f448bc")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "71258bc0-f80d-4ec1-8148-b3cca1007ebd")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dfbb6db3-152d-4021-b405-16e749cee86a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf5ef8e5-4c27-48de-afb6-466c89ed9cd6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "abd076b3-0a39-41cd-99eb-a2a2b5f53de8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/b8092e24-f8f6-4ddb-97fa-49e0726d7a0d")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "15139f89-bde8-4aca-b537-1619c46cd115")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a8f5c650-2451-48d2-9bbf-d1b127b2e87e")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "93bcac89-eadf-4bee-a107-c916edc63d09")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9fd867ec-746f-4dda-9207-9bc352f417b6")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2ef3c519-0a27-4db6-ad1e-7f73faf95b35")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9fd235ad-f870-4965-b294-827809b3e3b0")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "fbe38e9e-67c7-4dfd-9356-7f255f5aae37")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 11 "Net-(Q2-K)")
+			(pintype "passive")
+			(uuid "6f601aa7-537f-4804-baea-26629ebeaee0")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "690b9a3f-f770-4e64-b6fe-06e6208dfc2f")
+		(at 246.52 89.744)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R8"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "cde6b052-8a8c-465e-8164-29d153e0c2c3")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "89b6f2a4-ddde-4208-af77-276082349398")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7ffd3ac9-cf58-4a82-9765-b64535cebb58")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "474f344b-508f-44ff-8ce9-8c2fe6677e3f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c85ad157-021c-4aa5-9944-3b8d206eea47")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/cd6328c1-fc78-4e4e-8b59-97fb1a82120d")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "321112f3-9199-4032-94b5-d724802909bd")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b848238f-72b6-447a-a143-f370ee7d9d5d")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "db320814-52ba-48f8-8ad0-f005671b7614")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fde40821-feee-4bf1-9235-0fb015e5a8e7")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "322b3938-bafa-45b8-a500-7d5400bf98d8")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "eeae2f94-0ca6-48c2-94bf-84bf8b8c1e3d")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "875e4d8a-7095-4b7a-82ec-c67dbcab0825")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 25 "Net-(Q4-K)")
+			(pintype "passive")
+			(uuid "d87aefa9-1746-4016-807f-97f3d22623e3")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "6b95358e-116a-4a70-9ab7-47612ab20fdc")
+		(at 246.52 107.936)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R20"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "6c7e2565-adb9-4124-a9c7-9b694d3eda85")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7642e089-b070-4dec-a779-8252bc96828c")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d12b34d-c742-4dd1-8b04-e659324ed06f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "684812b4-785b-4054-a148-6ea3ab17438b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "78278167-b137-4290-b51a-306c306a5090")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/ecf0fbac-d4b8-4342-96d9-e3fa2004b11d")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ff529544-26c9-4199-9938-5d84f12eba2b")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "80bd4982-167d-4b37-98b2-689987166af5")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "edf5eb81-8a7c-4b3e-b84a-04f6bad94d2b")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "42e8ae27-07d1-410d-89a5-4fd9443ff967")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "591af0ee-fdf1-44c8-a222-26c0395dc046")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8e1b90a2-1c50-4611-993c-72e1b1bf9ace")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 16 "Net-(Q11-K)")
+			(pintype "passive")
+			(uuid "1725d491-f453-4499-bb7c-68cb7a6c402d")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "c56a1300-664a-4df8-863f-6a4b715d2581")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "85ed2a28-1130-460a-9753-ccfaeba3b3f1")
+		(at 246.52 77.616)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R4"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "62165f03-f069-455b-b856-45ca37116348")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bee2bd09-64b4-45c1-a1e3-9863eef6eb56")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "225cbba4-af37-402e-a977-578c4ca81ce1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2eae6e50-0868-4b9e-bf5a-33426245d159")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86b642bd-e116-4044-a360-efc50689f932")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/6a0144e3-510f-4c5e-a3a1-779a08e28323")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "325fb4d0-ee56-48de-b3c7-9180be9c0ed9")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "81e16d11-e3b0-47e9-9860-3af19a62aca2")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f6fb25d5-ab05-47f5-b598-a602413ea73f")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d9c15f81-fc5c-4a18-b564-e44210371c8a")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a868d044-3de2-4756-a52f-68d852c29a92")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a7033d2e-dc05-4e3a-9e69-1da556e070bf")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "7c413896-ebc9-48a3-907d-4b001650904b")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 23 "Net-(Q1-K)")
+			(pintype "passive")
+			(uuid "1afeeb32-a006-4e2a-ae85-1435bfa36e07")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "aa851d8d-13df-4ab8-b062-ffb0c429be0b")
+		(at 246.52 104.904)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R17"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "0e13db12-d7da-4b5d-bf46-00b6c73b8810")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "51045a3e-6b20-431e-8794-b984caa5761c")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68fa3d98-657e-4ea9-b7ee-7139f7f0f273")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b444e4d7-a5d8-43e1-9c8a-307076b01ae1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "80cf3328-bac9-40c3-a73e-bf0d548b0e1a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/be5fe1c9-b501-43ef-a451-17b0e8760b06")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "29fa845d-66fe-4559-924c-19b690b96198")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6324e3ea-3141-44d7-9d91-c3ee83954c6d")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fed61ccb-bc38-4de4-ab66-c59e42ebccd7")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "87d47d73-afea-4a06-8b2d-16dcd892474b")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fe75939b-c8e6-4896-9abd-8e575440f4b5")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "003686de-114e-497f-aac7-9978124c3729")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 8 "/Y3")
+			(pintype "passive")
+			(uuid "002cf172-e8d8-4b3b-9375-afc1ae8f1ad8")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "39563da5-bfd3-498e-8529-08cc5cd47c02")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "f59eccf9-d6a5-4f2c-9684-000464730e85")
+		(at 246.52 71.552)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R2"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "410f3675-c428-4223-898d-e0a53860c9e5")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e3e5d484-5ab3-4062-b61e-9f63cedb6e8a")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "592effc3-01e1-433b-a97d-689094391e29")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69f7df94-da11-4fca-a6b7-78744ffcda7d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b14b6649-f1e1-4d4f-80f1-4c1937d427b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/5b66fe80-2021-4730-a090-ba4064b93dbd")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3bfe7caf-1323-4210-a1d2-f934ed7971a1")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fa562de0-aa73-48d0-86d7-7f30cc61e43d")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f7ead179-8860-41cd-9ecb-f752e1331677")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "100fd281-9391-4441-9c7d-8eb1982cbe08")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6d772ce4-07a4-4009-b0d9-d1e6d1de6948")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "56b51f97-7a15-43e0-85a7-4a4330abdefc")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 13 "/Y4")
+			(pintype "passive")
+			(uuid "0808d276-3c22-4d08-b25a-2fc59cfb7e22")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "76894080-8f05-4647-a529-910102805ec9")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:RES0.3"
+		(layer "F.Cu")
+		(uuid "fd2f1915-0c1f-4857-a463-fa69cc29bd02")
+		(at 246.52 68.52)
+		(descr "Resistor, RC03")
+		(tags "R")
+		(property "Reference" "R1"
+			(at 0 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "f54a8e37-6e58-4ecd-bec2-4a3584ec0276")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 2.032 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7f7a2827-8c3f-49f3-91e6-920e640453c6")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(property "Footprint" "MacroLib:RES0.3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3390bdcf-c349-4a6d-8303-a25f77f0131f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc83f358-47eb-497a-88ca-e64187a17d05")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14e94e7b-2b27-4281-8d64-5de55915d3f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "RES* R_*")
+		(path "/9ba90519-b80e-45a6-a04e-4981a8ccfeee")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -2.54 -0.889)
+			(end -2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f43df27a-0326-42c6-8c62-df91bb374f0a")
+		)
+		(fp_line
+			(start -2.54 0)
+			(end -4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0ae49fa2-4d11-4f6d-b408-ca00b50b2298")
+		)
+		(fp_line
+			(start -2.54 0.889)
+			(end 2.54 0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fb19d982-e691-4c6f-8286-1b5318897f4c")
+		)
+		(fp_line
+			(start 2.54 -0.889)
+			(end -2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9f83eabf-c6cc-477b-9aab-9c24ed0d8b46")
+		)
+		(fp_line
+			(start 2.54 0)
+			(end 4.191 0)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "54b46e8e-29f9-4ab6-814d-4fb8b4153067")
+		)
+		(fp_line
+			(start 2.54 0.889)
+			(end 2.54 -0.889)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b359c754-3476-4723-9d58-0f6f570b4ecd")
+		)
+		(pad "1" thru_hole circle
+			(at -5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 4 "/Y0")
+			(pintype "passive")
+			(uuid "f88c7f75-903d-402c-b012-e9626fd81fb5")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 1.99898 1.99898)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 9 "GND")
+			(pintype "passive")
+			(uuid "2bb70e8e-d605-46f1-b11a-3d0f9fdb34c7")
+		)
+		(model "res0.3.wrl"
+			(offset
+				(xyz 1.523999977 0 1.015999985)
+			)
+			(scale
+				(xyz 0.393701 0.393701 0.393701)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
+	(footprint "MacroLib:TCRT5000L"
+		(layer "B.Cu")
+		(uuid "012d86b7-43d9-4711-ad9b-6560708511fb")
+		(at 136.987142 63.75 90)
+		(descr "TCRT5000L")
+		(tags "Integrated Circuit")
+		(property "Reference" "Q3"
+			(at -0.432 0.015 90)
+			(layer "B.SilkS")
+			(uuid "72d97e70-4ed5-4d12-9e37-368b51461dd0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TCRT5000"
+			(at -0.432 0.015 90)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "af7d98ec-1d2f-4fb6-a953-55989a834d45")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "MacroLib:TCRT5000L"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "65adc069-51aa-4dca-bea6-c3c0f3ed5456")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/83760/tcrt5000.pdf"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7f2fd14f-52d6-45d5-aa14-678616caf765")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "VISHAY - TCRT5000. - SENSOR, OPTICAL, TRANSISTOR O/P"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f4dbe3f2-b197-4776-904e-11e8b1263b4e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Arrow Part Number" "TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e3db094e-406a-4c37-a55c-daac84b2f520")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/tcrt5000/vishay?region=nac"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d1cf6092-16c0-4120-9df8-91b25be021a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Height" "6.8"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6625c2da-4d8d-4914-b3b1-43478f87d87d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "08a0f098-2764-4340-92f3-2924ce5796bc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "535ef63d-faab-4ec6-8d5a-9aabdfbe60f6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Part Number" "782-TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "43b0ff0b-328c-445b-a4f3-a6427fd2ceab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TCRT5000?qs=glpcD2KT6uaaYldHGIIt5g%3D%3D"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "59f62d44-8132-4ecf-9af8-f9f51171b752")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Testing Part Number" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1eb6406a-348d-46be-9782-e8a4e462ceea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Testing Price/Stock" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2ba33197-99a8-47db-a683-cd7f5b4ba831")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(path "/0eadb454-454d-4675-a9bf-ab1ba9cb2a20")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 1.5 -2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "e1a61e44-71a0-450c-aa2b-16ceb8ab8308")
+		)
+		(fp_line
+			(start -4.1 -2.9)
+			(end -1.5 -2.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "952493f5-c2f2-4d03-a17e-1b35d0b2d9f1")
+		)
+		(fp_line
+			(start -5.1 -1.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "dd75501d-21b4-4098-893b-3794bd0a09e8")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "a3cfc230-d561-48ce-8c29-1beffffc5dc4")
+		)
+		(fp_line
+			(start 1.5 2.9)
+			(end 5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "f7c81c0a-ee75-429e-9452-b12f43d0a906")
+		)
+		(fp_line
+			(start -1.5 2.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "7f6b4ad1-465c-4e70-8596-54406f8c2222")
+		)
+		(fp_circle
+			(center -2.79 3.492)
+			(end -2.79 3.434)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "5a17c338-2965-4050-bdd7-9ae465709f90")
+		)
+		(fp_line
+			(start 5.1 -2.9)
+			(end 5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "e270a098-8cfa-4ffe-ac14-42a93a013be4")
+		)
+		(fp_line
+			(start -5.1 -2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "c7b315bb-c5d1-4d5c-ad27-0fea27c51c03")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "788a2144-edc7-43a6-9165-d1512ad9ec9f")
+		)
+		(fp_line
+			(start -5.1 2.9)
+			(end -5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "41e3ec4a-7af6-48ad-bfc0-5b1a8ddd2a15")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -0.432 0.015 90)
+			(layer "B.Fab")
+			(uuid "dce6abf5-126d-4236-a6e6-486c80dd4bde")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at -4.65 -2.45 90)
+			(size 1 1)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(uuid "fc4236db-4d27-4303-957f-9a5febab66b3")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 -1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "1e0dc3b7-66fd-45a2-addb-219e06930f3b")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "1a74f232-cff3-47b7-b12c-ed01d8b04c6d")
+		)
+		(pad "1" thru_hole circle
+			(at -2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "C")
+			(pintype "passive")
+			(uuid "36e782c2-44b6-4e33-8e8a-972f0c608213")
+		)
+		(pad "2" thru_hole circle
+			(at -2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 13 "/Y4")
+			(pinfunction "E")
+			(pintype "passive")
+			(uuid "dc5b44b5-3e9f-450f-9a38-e40ee8949068")
+		)
+		(pad "3" thru_hole circle
+			(at 2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 12 "Net-(Q3-K)")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "8cbc73a5-37e7-45c9-9936-056b41f770a1")
+		)
+		(pad "4" thru_hole circle
+			(at 2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "f0d6e70a-2aea-4849-8c21-1628c82dee97")
+		)
+		(model "TCRT5000L.stp"
+			(offset
+				(xyz -3.539999909 5.550000107 9.970000117)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -180 0 0)
+			)
+		)
+	)
+	(footprint "MacroLib:TCRT5000L"
+		(layer "B.Cu")
+		(uuid "18e84fab-70a6-44a9-9f91-dc615044268b")
+		(at 98.9 63.75 90)
+		(descr "TCRT5000L")
+		(tags "Integrated Circuit")
+		(property "Reference" "Q2"
+			(at -0.432 0.015 90)
+			(layer "B.SilkS")
+			(uuid "9f4b6fe1-3e74-45b7-acd9-fecb98475f56")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TCRT5000"
+			(at -0.432 0.015 90)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "9ac27de9-ffd2-44a0-885d-601a4f545236")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "MacroLib:TCRT5000L"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "133a2193-d2e4-43ab-9d12-1da4813ed4a2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/83760/tcrt5000.pdf"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c33ba3b3-9c0c-4f78-b216-87da2298c251")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "VISHAY - TCRT5000. - SENSOR, OPTICAL, TRANSISTOR O/P"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8fd8c69e-d75f-4805-97ac-b3852a09b365")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Arrow Part Number" "TCRT5000"
+			(at 0 0 180)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8e1032d2-142a-470c-943e-bf77725e421f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/tcrt5000/vishay?region=nac"
+			(at 0 0 180)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "05face25-81f3-4495-8947-eeb4f2838a03")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Height" "6.8"
+			(at 0 0 180)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ab5e4354-286a-4e0f-9b13-5698ced760e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 0 0 180)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "22da4f16-a1a1-49bc-8e41-e09821c59880")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TCRT5000"
+			(at 0 0 180)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "968ed376-3758-4194-bb84-845addf51de3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Part Number" "782-TCRT5000"
+			(at 0 0 180)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7b8a03ec-f75f-4c99-a095-6ef9aa0694e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TCRT5000?qs=glpcD2KT6uaaYldHGIIt5g%3D%3D"
+			(at 0 0 180)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a0fb0630-b652-4d41-8661-b5ceb2692c97")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Testing Part Number" ""
+			(at 0 0 180)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a0117229-69cd-4cfa-acb1-b50a18082030")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Testing Price/Stock" ""
+			(at 0 0 180)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "dc4305ca-4562-47df-a475-20603f690812")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(path "/625bcbf1-a884-4cce-96a0-8fd094a461ed")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 1.5 -2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "3f4bec17-9b9f-4e86-be86-a537c66b7ebc")
+		)
+		(fp_line
+			(start -4.1 -2.9)
+			(end -1.5 -2.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "204f9a10-7e22-4177-b133-35006335caf1")
+		)
+		(fp_line
+			(start -5.1 -1.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "b27f71e9-b28b-4eba-9000-fbf3a3df80d6")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "2370c868-fe8e-402c-93e8-30eb77de09e6")
+		)
+		(fp_line
+			(start 1.5 2.9)
+			(end 5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "92ab3684-2ecd-48a2-a40a-461926db3190")
+		)
+		(fp_line
+			(start -1.5 2.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "a6e411c8-0a08-4c05-8608-a3b79938b02d")
+		)
+		(fp_circle
+			(center -2.79 3.492)
+			(end -2.79 3.434)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "00da2bb1-f80c-4bf8-a434-a55aab8d0f25")
+		)
+		(fp_line
+			(start 5.1 -2.9)
+			(end 5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "1b71a053-142a-4285-aaea-352d16cf965c")
+		)
+		(fp_line
+			(start -5.1 -2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "e8712139-0d52-4bb8-995b-4999d0748987")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "c41e360c-6619-4552-8384-bbd24a76933e")
+		)
+		(fp_line
+			(start -5.1 2.9)
+			(end -5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "804185fa-7e97-4a27-83a8-fb22dfbc3b8b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -0.432 0.015 90)
+			(layer "B.Fab")
+			(uuid "c70dab10-b818-4f7b-bca8-c4bb6e5832e6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at -4.65 -2.45 90)
+			(size 1 1)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(uuid "ed9d9762-e9de-453e-b6e8-36c372259980")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 -1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "5ae8e4ac-a712-4ace-8954-ff9992139e43")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "c44c419b-c2b0-4005-8018-41db2c7ee69a")
+		)
+		(pad "1" thru_hole circle
+			(at -2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "C")
+			(pintype "passive")
+			(uuid "b74574f5-b96f-4092-b555-16519a7e65fa")
+		)
+		(pad "2" thru_hole circle
+			(at -2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 4 "/Y0")
+			(pinfunction "E")
+			(pintype "passive")
+			(uuid "031f7ac2-eb49-43d5-be59-d59096b0d965")
+		)
+		(pad "3" thru_hole circle
+			(at 2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 11 "Net-(Q2-K)")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "e33f83d1-f807-4ce9-8769-bd016a195bef")
+		)
+		(pad "4" thru_hole circle
+			(at 2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "e61096ca-e976-4537-b92b-70c4197240ca")
+		)
+		(model "TCRT5000L.stp"
+			(offset
+				(xyz -3.539999909 5.550000107 9.970000117)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -180 0 0)
+			)
+		)
+	)
+	(footprint "MacroLib:TCRT5000L"
+		(layer "B.Cu")
+		(uuid "a57528dd-8405-4d3f-aede-538f618398dc")
+		(at 124.291428 63.75 90)
+		(descr "TCRT5000L")
+		(tags "Integrated Circuit")
+		(property "Reference" "Q9"
+			(at -0.432 0.015 -90)
+			(layer "B.SilkS")
+			(uuid "ac8aa0f7-ebe5-4b32-bce2-e96e6fe262c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TCRT5000"
+			(at -0.432 0.015 -90)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "cbb558bc-ed94-4c9c-86d8-2359637377fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "MacroLib:TCRT5000L"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0cc2bfe8-26fc-4f9c-b498-e3cf71a748b6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/83760/tcrt5000.pdf"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c515b5b3-09fc-4521-b42d-d09496d29a92")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "VISHAY - TCRT5000. - SENSOR, OPTICAL, TRANSISTOR O/P"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "eeca632f-818e-454b-927d-fdbfaa521ba7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Arrow Part Number" "TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d1d6680d-c70b-48de-bc7d-415861b0ba54")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/tcrt5000/vishay?region=nac"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "32d027fc-d10e-4e97-bfd0-d8228bae9c1d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Height" "6.8"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e14080bd-6338-468b-849e-5d22667cbd5d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b68e63a0-de6b-4879-8b8a-1eb6a636cd4f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3c8e7019-b5da-4019-8e08-f0d2081cfab8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Part Number" "782-TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "de502300-00cd-4ad7-81ed-ec477d1eb016")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TCRT5000?qs=glpcD2KT6uaaYldHGIIt5g%3D%3D"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b1ae867e-7dce-4cdd-bf30-d288b1b2838f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Testing Part Number" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5e9517ac-ef04-49ec-94f9-62e861d29c67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Testing Price/Stock" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ca510709-f3f0-44c1-84b5-7003e3bb6b79")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(path "/06b27e60-a058-4937-8bc1-8b154ac99892")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 1.5 -2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "aa3dae1a-dbee-43cf-8fd5-d2a0427c4648")
+		)
+		(fp_line
+			(start -4.1 -2.9)
+			(end -1.5 -2.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "0fb1ff79-6c2b-48ca-a9ef-a8688ac4223e")
+		)
+		(fp_line
+			(start -5.1 -1.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "8a14603b-0fb9-4cb5-891f-bd647778b175")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "36fe40c6-db20-40bb-a542-01e3dceb07bc")
+		)
+		(fp_line
+			(start 1.5 2.9)
+			(end 5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "2e4a55b9-98ed-4c4f-8cf2-898adf5e17ea")
+		)
+		(fp_line
+			(start -1.5 2.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "7e28313b-6c5f-4535-9cf9-dcb585d15760")
+		)
+		(fp_circle
+			(center -2.79 3.492)
+			(end -2.79 3.434)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "799f26cc-c563-44fb-a88d-2e1489588b0e")
+		)
+		(fp_line
+			(start 5.1 -2.9)
+			(end 5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "5d82393c-6aca-46ef-a414-95a2015b3e99")
+		)
+		(fp_line
+			(start -5.1 -2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "22887663-f490-48f3-9c5f-fee5c5492f3a")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "20e41ade-0b85-41fa-8310-ca901d9e676d")
+		)
+		(fp_line
+			(start -5.1 2.9)
+			(end -5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "9e943a86-a7b9-4342-be6f-aaed6fc84e9d")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -0.432 0.015 -90)
+			(layer "B.Fab")
+			(uuid "64366109-0bc2-458e-9948-0f028ff9c9d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at -4.65 -2.45 90)
+			(size 1 1)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(uuid "0bfcad07-69c8-4b09-b8e2-a8b919afa19d")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 -1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "46e3a3e6-c8d2-48a2-b603-00a4dd076f9e")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "850437c6-5240-41fb-b3ad-7a6ce0a61505")
+		)
+		(pad "1" thru_hole circle
+			(at -2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "C")
+			(pintype "passive")
+			(uuid "ca34034d-03a5-4c8a-abcf-9a599487624f")
+		)
+		(pad "2" thru_hole circle
+			(at -2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 10 "/Y5")
+			(pinfunction "E")
+			(pintype "passive")
+			(uuid "4ab85c9d-f085-44a8-9f44-bce9ea24ec45")
+		)
+		(pad "3" thru_hole circle
+			(at 2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 15 "Net-(Q9-K)")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "24d7aab2-7b9e-402b-91de-18882b13164b")
+		)
+		(pad "4" thru_hole circle
+			(at 2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "e3f6a53f-b235-435d-b1cf-9d1879972460")
+		)
+		(model "TCRT5000L.stp"
+			(offset
+				(xyz -3.539999909 5.550000107 9.970000117)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -180 0 0)
+			)
+		)
+	)
+	(footprint "MacroLib:TCRT5000L"
+		(layer "B.Cu")
+		(uuid "c3b8fdbb-1cf0-42bf-a78e-bee4066697fc")
+		(at 111.595714 63.75 90)
+		(descr "TCRT5000L")
+		(tags "Integrated Circuit")
+		(property "Reference" "Q11"
+			(at -0.432 0.015 90)
+			(layer "B.SilkS")
+			(uuid "196187c4-930e-4aa3-8577-6635b38c0f95")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TCRT5000"
+			(at -0.432 0.015 90)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "bfc0be43-6b9d-45ee-9046-62c0d8e8fffb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "MacroLib:TCRT5000L"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9bb990d5-cc3d-4600-93c0-efe3c50d4859")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/83760/tcrt5000.pdf"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "58abf210-16cb-4915-99bb-2b86e841199e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "VISHAY - TCRT5000. - SENSOR, OPTICAL, TRANSISTOR O/P"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "59b5980e-0a0d-4668-8ee9-25152e941b5d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Arrow Part Number" "TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "29aa5dfd-734d-438f-af36-a1a2ea48cfc6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/tcrt5000/vishay?region=nac"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f9afac9e-c6f1-45c1-865b-867f276ea0ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Height" "6.8"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0d8f5aae-5635-452e-aba5-aa0698253f33")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "83e70953-345b-40a8-b275-30e9a6a9419d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "bf33744b-7f3d-420e-9462-081f12cbaf1a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Part Number" "782-TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "80deb747-158e-4a18-b1df-5a5fc6cc6830")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TCRT5000?qs=glpcD2KT6uaaYldHGIIt5g%3D%3D"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c9441097-94b9-48ca-bb07-07838c9f4557")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Testing Part Number" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "93bd0eba-337c-48da-8aa3-ea1b9f17d3e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Testing Price/Stock" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e34ab435-ceea-49cd-aa22-7c2002e63cc0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(path "/c7a83d27-b038-44da-9e24-872f794484ef")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 1.5 -2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "03a63f23-bd80-4a3b-b792-d37457843ca3")
+		)
+		(fp_line
+			(start -4.1 -2.9)
+			(end -1.5 -2.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "90dfa3cf-abe2-4b30-bbbb-4251b84a9c4d")
+		)
+		(fp_line
+			(start -5.1 -1.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "2affb20e-1b07-4618-832a-ce788fd2f258")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "3f95907b-a02c-43c1-b09a-827f85dd3f9f")
+		)
+		(fp_line
+			(start 1.5 2.9)
+			(end 5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "7531e28e-1348-46a0-b73d-7dac9d85dd9a")
+		)
+		(fp_line
+			(start -1.5 2.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "ee8dadf6-06a5-465b-be48-cc76951e72f2")
+		)
+		(fp_circle
+			(center -2.79 3.492)
+			(end -2.79 3.434)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "1bbac28a-f967-4df3-8cc1-c3bb1939991b")
+		)
+		(fp_line
+			(start 5.1 -2.9)
+			(end 5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "13b527cb-89aa-40ae-be09-aa1e905d8a35")
+		)
+		(fp_line
+			(start -5.1 -2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "9439dea9-c968-4e9c-9e0b-33640269b5f8")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "30e88f93-d326-48a6-86bc-02c7c5dc74da")
+		)
+		(fp_line
+			(start -5.1 2.9)
+			(end -5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "4a66a427-1ec4-4f9e-8e2d-69d1d95a4d86")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -0.432 0.015 90)
+			(layer "B.Fab")
+			(uuid "379ae132-6b2d-4358-aea7-bb3e624ba44d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at -4.65 -2.45 90)
+			(size 1 1)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(uuid "4e1ccd81-9717-45f7-b97d-a0ae067a6cc2")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 -1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "9c116eaf-b8f9-4eaf-b6b7-39fa17c3759d")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "e2f5524d-3205-4973-8e92-43a62be74f21")
+		)
+		(pad "1" thru_hole circle
+			(at -2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "C")
+			(pintype "passive")
+			(uuid "900e5fa1-647c-4794-80a9-2596d977f9fb")
+		)
+		(pad "2" thru_hole circle
+			(at -2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 8 "/Y3")
+			(pinfunction "E")
+			(pintype "passive")
+			(uuid "5f0d4d57-5a20-46ca-990f-1950633ecd24")
+		)
+		(pad "3" thru_hole circle
+			(at 2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 16 "Net-(Q11-K)")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "453b384b-d0fe-485e-99f6-2b23b8e60659")
+		)
+		(pad "4" thru_hole circle
+			(at 2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "56ebee95-9f72-4e08-9010-bfd5cc1b9b5c")
+		)
+		(model "TCRT5000L.stp"
+			(offset
+				(xyz -3.539999909 5.550000107 9.970000117)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -180 0 0)
+			)
+		)
+	)
+	(footprint "MacroLib:TCRT5000L"
+		(layer "B.Cu")
+		(uuid "e7f0ae7f-edac-4665-ae14-18c558c3e4b7")
+		(at 149.682856 63.75 90)
+		(descr "TCRT5000L")
+		(tags "Integrated Circuit")
+		(property "Reference" "Q14"
+			(at -0.432 0.015 90)
+			(layer "B.SilkS")
+			(uuid "67d948a9-b81c-47c7-ac9a-73543fae0345")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TCRT5000"
+			(at -0.432 0.015 90)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "0a8ac002-59f1-46a6-b96f-fe16d2c797ea")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "MacroLib:TCRT5000L"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2cf56784-86fa-4776-a710-f5dd4dd5cf06")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/83760/tcrt5000.pdf"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1fea4c85-5ce3-4448-a70d-bcb06b5246be")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "VISHAY - TCRT5000. - SENSOR, OPTICAL, TRANSISTOR O/P"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9f8d8605-140d-40bb-b82b-46b69237e562")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Arrow Part Number" "TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "def72242-d311-40ef-824e-cbac162ad1bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/tcrt5000/vishay?region=nac"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5feb6a7f-6c9f-41cd-93c0-cf2765f23f65")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Height" "6.8"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "12b6f2b8-adaa-4b7f-aff5-c5092dc587bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "59252151-e209-4132-829b-d4494ab1c91f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "56510f02-b713-4133-adcf-d7a5e883d038")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Part Number" "782-TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e583b911-2347-4b92-aba7-236c735df889")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TCRT5000?qs=glpcD2KT6uaaYldHGIIt5g%3D%3D"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d3d31fee-ffb3-4214-be30-7796fc4ea2d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Testing Part Number" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "144c5257-c815-4379-ae9f-0399e03a611d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Testing Price/Stock" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5e019498-f831-4d58-9c75-a0a4e1d359cf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(path "/39e50696-3673-4b62-972e-278cec87f5a7")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 1.5 -2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "e849e46c-1b48-4fa0-943f-0bab0cf07bd6")
+		)
+		(fp_line
+			(start -4.1 -2.9)
+			(end -1.5 -2.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "f6f73bee-6b5e-4e09-b43e-73a7d79d0310")
+		)
+		(fp_line
+			(start -5.1 -1.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "2043b78d-769a-44af-adc5-8c9ce109d2a0")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "d9a24d08-6d55-4dd2-8db2-28d1ac280821")
+		)
+		(fp_line
+			(start 1.5 2.9)
+			(end 5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "9b814046-7709-4be5-80ad-215a379d6dd6")
+		)
+		(fp_line
+			(start -1.5 2.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "27aac9e3-7f61-48de-a5fa-c0240290dc08")
+		)
+		(fp_circle
+			(center -2.79 3.492)
+			(end -2.79 3.434)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "fe0facaa-bea1-493f-ac6f-61a558b9ab42")
+		)
+		(fp_line
+			(start 5.1 -2.9)
+			(end 5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "43cab2a7-b031-451e-9ac2-6a28dbe8e88b")
+		)
+		(fp_line
+			(start -5.1 -2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "d00d564d-ce17-42c9-b1ef-f8feace6d108")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "88cd26d4-d1be-48fd-a4da-392e6564550b")
+		)
+		(fp_line
+			(start -5.1 2.9)
+			(end -5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "0de4d7dc-b3bb-4a90-983f-8d26226c2d08")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -0.432 0.015 90)
+			(layer "B.Fab")
+			(uuid "49d3cbb7-f099-4c5c-9fec-9e76734b2347")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at -4.65 -2.45 90)
+			(size 1 1)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(uuid "df13784f-17c9-4b7f-b73d-f11cec9e93c2")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 -1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "367a1385-93ff-4b3a-8539-1cd2a3d2f148")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "3ace2b06-7740-4c6f-8265-08f4e3b6f7a7")
+		)
+		(pad "1" thru_hole circle
+			(at -2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "C")
+			(pintype "passive")
+			(uuid "d93edb1f-70df-4851-b8f4-f2d52fc9ecca")
+		)
+		(pad "2" thru_hole circle
+			(at -2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 7 "/Y2")
+			(pinfunction "E")
+			(pintype "passive")
+			(uuid "dc9fc686-6123-4227-a4f5-30c390c00967")
+		)
+		(pad "3" thru_hole circle
+			(at 2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 17 "Net-(Q14-K)")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "b06c8d1b-0571-4ca6-9624-706b8802f392")
+		)
+		(pad "4" thru_hole circle
+			(at 2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "415a56ee-2beb-4ed4-b0c0-8f441acc6325")
+		)
+		(model "TCRT5000L.stp"
+			(offset
+				(xyz -3.539999909 5.550000107 9.970000117)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -180 0 0)
+			)
+		)
+	)
+	(footprint "MacroLib:TCRT5000L"
+		(layer "B.Cu")
+		(uuid "f6d9b055-590f-4ea9-ba84-a83b537d5a9c")
+		(at 162.37857 63.75 90)
+		(descr "TCRT5000L")
+		(tags "Integrated Circuit")
+		(property "Reference" "Q8"
+			(at -0.432 0.015 90)
+			(layer "B.SilkS")
+			(uuid "65a95bd9-7cb2-4f1f-8041-5a6fee5b0f62")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "TCRT5000"
+			(at -0.432 0.015 90)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "783d7cc3-6d6b-4549-84bb-aab03d8d6faa")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "MacroLib:TCRT5000L"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "284d961b-af55-4b5c-969c-da3b86095732")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/83760/tcrt5000.pdf"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2d30c4cb-5596-4d8b-8101-07a9f3674128")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "VISHAY - TCRT5000. - SENSOR, OPTICAL, TRANSISTOR O/P"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "93754bb7-0f49-4521-b588-c8ec999f162d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Arrow Part Number" "TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a700ea9c-0e3c-4fd0-8051-6676098ab0dd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/tcrt5000/vishay?region=nac"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c1d8d5ef-e2e3-4019-9c18-3fc051db0c33")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Height" "6.8"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "35b4cbe8-ca9b-4946-b6c3-0d2ac14d743b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "69eb93ed-f21d-4d86-8cfb-d036d23ff51a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "975273b6-37dd-468d-bc95-e185e408c198")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Part Number" "782-TCRT5000"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "db31866d-714a-4ea7-bd5f-12165692f99c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TCRT5000?qs=glpcD2KT6uaaYldHGIIt5g%3D%3D"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0e83b7be-cc13-414f-acba-ebd3a9410868")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Testing Part Number" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "43b4f095-8b60-400f-a2ac-fcfd606c2623")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Testing Price/Stock" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2bfcaf75-431c-45f2-a6be-12ab35d4ca73")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(path "/d6d1061f-61b9-40c3-8ea6-4d978c740480")
+		(sheetname "Raíz")
+		(sheetfile "Sensors.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 1.5 -2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "8b6a9277-be64-4e3d-a32a-072701eab138")
+		)
+		(fp_line
+			(start -4.1 -2.9)
+			(end -1.5 -2.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "49ae7a97-0b4d-404a-a747-be3e58dac645")
+		)
+		(fp_line
+			(start -5.1 -1.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "9770e414-b2e8-406d-9592-9d42ebc5867e")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "73f32dc4-c6a8-4739-9495-9bd93a9e27e3")
+		)
+		(fp_line
+			(start 1.5 2.9)
+			(end 5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "40ff5db9-a45e-44b2-b78d-443ac84dd7c5")
+		)
+		(fp_line
+			(start -1.5 2.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "56baa32f-ed2a-4f0b-9810-ff32b302b522")
+		)
+		(fp_circle
+			(center -2.79 3.492)
+			(end -2.79 3.434)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "0da4aeb8-ef62-429e-8452-a3bd199d1a8a")
+		)
+		(fp_line
+			(start 5.1 -2.9)
+			(end 5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "681cfcba-5924-4140-af34-8a2bd1576dc1")
+		)
+		(fp_line
+			(start -5.1 -2.9)
+			(end 5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "3e6d0586-ef33-4d88-bb1e-62f90a4c850f")
+		)
+		(fp_line
+			(start 5.1 2.9)
+			(end -5.1 2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "b79e570a-12d1-4773-9d8c-42ea557153fa")
+		)
+		(fp_line
+			(start -5.1 2.9)
+			(end -5.1 -2.9)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "3e41ef49-aa47-425b-88e3-9c82c0058788")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -0.432 0.015 90)
+			(layer "B.Fab")
+			(uuid "2bb5620f-4ea3-43c8-aed7-e365ebdf8c7d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at -4.65 -2.45 90)
+			(size 1 1)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(uuid "144237f2-cc8c-48ae-8d8a-02c4f9b479bb")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 -1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "4e0e4fc3-0eac-43b3-8c34-0213c1c727b2")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 1.9 90)
+			(size 2.5 2.5)
+			(drill 2.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "ca872f31-1da0-424c-bb84-7c434f670938")
+		)
+		(pad "1" thru_hole circle
+			(at -2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "C")
+			(pintype "passive")
+			(uuid "765025d0-8a34-4c22-8e9e-85dd5d465383")
+		)
+		(pad "2" thru_hole circle
+			(at -2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 5 "/Y1")
+			(pinfunction "E")
+			(pintype "passive")
+			(uuid "27bdc493-3405-4196-8982-99d25864e6c5")
+		)
+		(pad "3" thru_hole circle
+			(at 2.75 -1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 14 "Net-(Q8-K)")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "95272116-f8f1-41ab-8a60-b95c8dbcc83f")
+		)
+		(pad "4" thru_hole circle
+			(at 2.75 1.27 90)
+			(size 1.55 1.55)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "VCC")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "5a3fb7fa-2c01-48ff-a2e3-868e110ac465")
+		)
+		(model "TCRT5000L.stp"
+			(offset
+				(xyz -3.539999909 5.550000107 9.970000117)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -180 0 0)
+			)
+		)
+	)
+	(gr_circle
+		(center 145 230)
+		(end 145 230)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "686017f8-a1a2-4497-9c3e-38c324531d4b")
+	)
+	(zone
+		(net 9)
+		(net_name "GND")
+		(layer "F.Cu")
+		(uuid "bbfc409e-1180-41d9-aaf0-cee8c4c36d15")
+		(hatch edge 0.508)
+		(connect_pads
+			(clearance 0.5)
+		)
+		(min_thickness 0.7)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.7)
+			(thermal_bridge_width 0.7)
+		)
+		(polygon
+			(pts
+				(xy 215 145) (xy 75 145) (xy 75 75) (xy 215 75)
+			)
+		)
+	)
+)
