@@ -3203,7 +3203,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 160.02) (xy 125.73 163.83)
+			(xy 125.73 161.29) (xy 125.73 165.1)
 		)
 		(stroke
 			(width 0)
@@ -3273,7 +3273,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 160.02) (xy 106.68 163.83)
+			(xy 106.68 161.29) (xy 106.68 165.1)
 		)
 		(stroke
 			(width 0)
@@ -4416,7 +4416,7 @@
 		(uuid "7d75d587-3fcb-44ee-8263-3403b1c41cd5")
 	)
 	(label "OUT_LED2"
-		(at 154.94 125.73 180)
+		(at 154.94 123.19 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4537,7 +4537,7 @@
 		(uuid "a2bcff70-a601-4182-a12b-be95ef990826")
 	)
 	(label "OUT_LED1"
-		(at 154.94 123.19 180)
+		(at 154.94 125.73 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4714,7 +4714,7 @@
 	)
 	(symbol
 		(lib_id "EESTN5:R")
-		(at 106.68 166.37 0)
+		(at 106.68 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4723,7 +4723,7 @@
 		(fields_autoplaced yes)
 		(uuid "0419fbcb-5c8f-410a-8838-ca16923f798d")
 		(property "Reference" "R4"
-			(at 107.95 165.0999 0)
+			(at 107.95 157.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4732,7 +4732,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 107.95 167.6399 0)
+			(at 107.95 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4741,7 +4741,7 @@
 			)
 		)
 		(property "Footprint" "MacroLib:RES0.3"
-			(at 106.68 166.37 0)
+			(at 106.68 158.75 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4750,7 +4750,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 166.37 0)
+			(at 106.68 158.75 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4758,7 +4758,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 106.68 166.37 0)
+			(at 106.68 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6763,7 +6763,7 @@
 	)
 	(symbol
 		(lib_id "EESTN5:R")
-		(at 125.73 166.37 0)
+		(at 125.73 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6772,7 +6772,7 @@
 		(fields_autoplaced yes)
 		(uuid "90487f1e-83ee-4842-b661-9c06ee4f324a")
 		(property "Reference" "R5"
-			(at 127 165.0999 0)
+			(at 127 157.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6781,7 +6781,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 127 167.6399 0)
+			(at 127 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6790,7 +6790,7 @@
 			)
 		)
 		(property "Footprint" "MacroLib:RES0.3"
-			(at 125.73 166.37 0)
+			(at 125.73 158.75 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6799,7 +6799,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 166.37 0)
+			(at 125.73 158.75 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6807,7 +6807,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 125.73 166.37 0)
+			(at 125.73 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6832,7 +6832,7 @@
 	)
 	(symbol
 		(lib_id "EESTN5:LED")
-		(at 125.73 157.48 270)
+		(at 125.73 166.37 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6841,7 +6841,7 @@
 		(fields_autoplaced yes)
 		(uuid "95b78856-3a88-40a9-a1ad-5dc01ae55552")
 		(property "Reference" "LED3"
-			(at 127 156.9719 90)
+			(at 127 165.8619 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -6850,7 +6850,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 127 159.5119 90)
+			(at 127 168.4019 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -6859,7 +6859,7 @@
 			)
 		)
 		(property "Footprint" "EESTN5:led_5mm_green"
-			(at 125.73 157.48 0)
+			(at 125.73 166.37 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6868,7 +6868,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 157.48 0)
+			(at 125.73 166.37 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6876,7 +6876,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 125.73 157.48 0)
+			(at 125.73 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7641,7 +7641,7 @@
 	)
 	(symbol
 		(lib_id "EESTN5:LED")
-		(at 106.68 157.48 270)
+		(at 106.68 166.37 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7650,7 +7650,7 @@
 		(fields_autoplaced yes)
 		(uuid "ce96461c-cb67-484e-8dbf-1ad9606ed650")
 		(property "Reference" "LED2"
-			(at 107.95 156.9719 90)
+			(at 107.95 165.8619 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -7659,7 +7659,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 107.95 159.5119 90)
+			(at 107.95 168.4019 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -7668,7 +7668,7 @@
 			)
 		)
 		(property "Footprint" "EESTN5:led_5mm_green"
-			(at 106.68 157.48 0)
+			(at 106.68 166.37 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7677,7 +7677,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 157.48 0)
+			(at 106.68 166.37 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7685,7 +7685,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 106.68 157.48 0)
+			(at 106.68 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
