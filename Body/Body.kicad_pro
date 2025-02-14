@@ -486,7 +486,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Body.step",
       "svg": "",
       "vrml": ""
     },
