@@ -147,6 +147,16 @@ void setup() {
   Serial.print("Sistema iniciado. kp = ");
   Serial.println(kp);
   #endif
+    // --- Cambiar Timer1 (pines 9 y 10) a ~980 Hz ---
+  TCCR1B = (TCCR1B & 0b11111000) | 0x03; // prescaler = 64 → 16MHz / (64*256) = 976.56 Hz aprox.
+
+  // --- Cambiar Timer2 (pines 3 y 11) a ~980 Hz ---
+  TCCR2B = (TCCR2B & 0b11111000) | 0x04; // prescaler = 64 → 16MHz / (64*256) = 976.56 Hz aprox.
+
+  #ifdef DEBUG
+  Serial.println("Timers configurados a ~980Hz");
+  #endif
+
 }
 
 // === LOOP ===
