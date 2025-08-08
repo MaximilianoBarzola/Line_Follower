@@ -18,10 +18,13 @@
 // === EEPROM ===
 #define EEPROM_ADDR_KP 0 // Dirección de EEPROM para guardar kp
 
+// === PID ===
+#define TIME 5
 // === BOTONES ===
 unsigned long debounceDelay = 100;
 unsigned long lastDebounceTime1 = 0;
 unsigned long lastDebounceTime2 = 0;
+unsigned long lastTime = 0;
 bool lastState1 = HIGH;
 bool lastState2 = HIGH;
 
@@ -48,7 +51,7 @@ float integral = 0;
 float derivative = 0;
 float setpoint = 350;
 int correccion = 0;
-int baseSpeed = 200;
+int baseSpeed = 255;
 
 // === MOTOR ===
 class Motor {
@@ -157,6 +160,7 @@ void setup() {
   Serial.println("Timers configurados a ~980Hz");
   #endif
 
+  lastTime = millis();
 }
 
 // === LOOP ===
@@ -191,7 +195,10 @@ void loop() {
   poslast = pos;
 
   // PID
-  correccion = calcularPID(pos);
+  if(millis() > TIME + lastTime){
+    correccion = calcularPID(pos);
+    lastTime = millis();
+  }
 
   // Control de motores
   int velocidadIzquierda = baseSpeed + correccion;
