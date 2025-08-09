@@ -2,8 +2,9 @@
 #include <EEPROM.h>
 
 // === CONFIGURACIÓN ===
-#define REGLA 0
+#define REGLA 1
 //#define DEBUG           // ← Comentá esta línea para desactivar logs por Serial
+#define USE_FAULT_PROTECT   // ← Comentá esta línea para desactivar la protección por nFAULT
 
 // === PINES ===
 #define BOTTOM1 12      // ↓ Disminuye kp
@@ -14,6 +15,10 @@
 #define PINB2 11
 #define LED_INICIO 6
 #define LED_CALIBRACION 7
+
+#ifdef USE_FAULT_PROTECT
+#define FAULT_PIN 2     // Pin conectado a nFAULT del DRV8833
+#endif
 
 // === EEPROM ===
 #define EEPROM_ADDR_KP 0 // Dirección de EEPROM para guardar kp
@@ -27,6 +32,10 @@ unsigned long lastDebounceTime2 = 0;
 unsigned long lastTime = 0;
 bool lastState1 = HIGH;
 bool lastState2 = HIGH;
+
+#ifdef USE_FAULT_PROTECT
+volatile bool faultActiveISR = false; // Flag de interrupción
+#endif
 
 // === SENSORES ===
 const int sensores[8] = {A0, A1, A2, A3, A4, A5, A6, A7};
@@ -51,7 +60,7 @@ float integral = 0;
 float derivative = 0;
 float setpoint = 350;
 int correccion = 0;
-int baseSpeed = 255;
+int baseSpeed = 230;
 
 // === MOTOR ===
 class Motor {
@@ -100,7 +109,11 @@ void calibrarSensores() {
   while (digitalRead(BOTTOM1));
   delay(10);
   for (int x = 0; x < 8; x++) {
-    valor_blanco[x] = analogRead(sensores[x]);
+    int valor_promedio = 0;
+    for (int i = 0; i < 10; i++){
+      valor_promedio += analogRead(sensores[x]); 
+    }
+    valor_blanco[x] = valor_promedio/10;
   }
 
   delay(200);
@@ -109,7 +122,11 @@ void calibrarSensores() {
   while (digitalRead(BOTTOM1));
 
   for (int x = 0; x < 8; x++) {
-    valor_negro[x] = analogRead(sensores[x]);
+    int valor_promedio = 0;
+    for (int i = 0; i < 10; i++){
+      valor_promedio += analogRead(sensores[x]); 
+    }
+    valor_negro[x] = valor_promedio/10;
   }
 
   for (int x = 0; x < 8; x++) {
@@ -123,6 +140,12 @@ void calibrarSensores() {
   while (digitalRead(BOTTOM1));
 }
 
+#ifdef USE_FAULT_PROTECT
+void faultISR() {
+  faultActiveISR = true;
+}
+#endif
+
 // === SETUP ===
 void setup() {
   #ifdef DEBUG
@@ -133,6 +156,11 @@ void setup() {
   pinMode(BOTTOM2, INPUT_PULLUP);
   pinMode(LED_INICIO, OUTPUT);
   pinMode(LED_CALIBRACION, OUTPUT);
+
+  #ifdef USE_FAULT_PROTECT
+  pinMode(FAULT_PIN, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(FAULT_PIN), faultISR, FALLING);
+  #endif
 
   M1.begin();
   M2.begin();
@@ -165,6 +193,36 @@ void setup() {
 
 // === LOOP ===
 void loop() {
+
+  #ifdef USE_FAULT_PROTECT
+  static bool faultBlinkState = false;
+  static unsigned long lastBlinkTime = 0;
+
+  if (faultActiveISR) {
+    // Parar motores
+    M1.setSpeed(0);
+    M2.setSpeed(0);
+
+    // Parpadeo LEDs cada 200ms
+    if (millis() - lastBlinkTime >= 200) {
+      lastBlinkTime = millis();
+      faultBlinkState = !faultBlinkState;
+      digitalWrite(LED_INICIO, faultBlinkState);
+      digitalWrite(LED_CALIBRACION, faultBlinkState);
+    }
+
+    // Salir del loop normal
+    if (digitalRead(FAULT_PIN) == HIGH) {
+      // Falla se liberó
+      faultActiveISR = false;
+      digitalWrite(LED_INICIO, HIGH);
+      digitalWrite(LED_CALIBRACION, LOW);
+    } else {
+      return; // Mantener parada
+    }
+  }
+  #endif
+
   // Leer sensores
   sumap = 0;
   suma = 0;
