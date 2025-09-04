@@ -1,39 +1,4 @@
-25738647282682097
-Arduino
-Arduino_Micro
-Arduino Micro
-Arduino Micro
-0
-34
-34
-Arduino
-Arduino_Nano
-Arduino Nano
-Arduino Nano
-0
-30
-30
-Arduino
-Arduino_Nano_Every
-Arduino Nano Every
-Arduino Nano Every
-0
-30
-30
-Arduino
-Arduino_Pro_Mini
-Arduino Pro Mini
-Arduino Pro Mini
-0
-28
-28
-Arduino
-Sparkfun_Pro_Micro
-Sparkfun Pro Micro
-Arduino Sparkfun Pro Micro
-0
-24
-24
+25729161289109050
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -58786,6 +58751,13 @@ PAD_SMD_3x6mm
 1
 1
 EESTN5
+PIN
+
+
+0
+0
+0
+EESTN5
 PRESET-DUAL
 
 
@@ -68263,6 +68235,20 @@ Yellow 5381 Series LED
 0
 2
 2
+Logos
+LOGO_RIVER
+
+
+0
+0
+0
+Logos
+Plantense
+
+
+0
+0
+0
 MacroLib
 1088AS
 8X8 Led Matrix
@@ -68522,6 +68508,13 @@ OLED oled
 0
 4
 4
+MacroLib
+P-TO-263-7
+BTS7960B-1
+Integrated Circuit
+0
+8
+8
 MacroLib
 PEC12R-4XXXF-SXXXX_1
 PEC12R-4XXXF-SXXXX

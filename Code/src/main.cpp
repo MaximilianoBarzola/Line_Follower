@@ -24,7 +24,7 @@
 #define EEPROM_ADDR_KP 0 // Dirección de EEPROM para guardar kp
 
 // === PID ===
-#define TIME 5
+#define TIME 2
 // === BOTONES ===
 unsigned long debounceDelay = 100;
 unsigned long lastDebounceTime1 = 0;
@@ -51,7 +51,7 @@ int sumap = 0;
 int suma = 0;
 
 // === PID ===
-float kp = 0.1;
+float kp = 0.7;
 float ki = 0.0;
 float kd = 2.0;
 float error = 0;
@@ -60,7 +60,7 @@ float integral = 0;
 float derivative = 0;
 float setpoint = 350;
 int correccion = 0;
-int baseSpeed = 230;
+int baseSpeed = 75;
 
 // === MOTOR ===
 class Motor {
@@ -92,7 +92,7 @@ class Motor {
 };
 
 Motor M1 = Motor(PINA1, PINB1);
-Motor M2 = Motor(PINA2, PINB2);
+Motor M2 = Motor(PINB2, PINA2);
 
 // === PID ===
 int calcularPID(int lectura) {
