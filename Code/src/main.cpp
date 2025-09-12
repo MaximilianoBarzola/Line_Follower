@@ -2,7 +2,7 @@
 #include <EEPROM.h>
 
 // === CONFIGURACIÓN ===
-#define REGLA 1
+#define REGLA 0
 //#define DEBUG           // ← Comentá esta línea para desactivar logs por Serial
 #define USE_FAULT_PROTECT   // ← Comentá esta línea para desactivar la protección por nFAULT
 
@@ -24,7 +24,7 @@
 #define EEPROM_ADDR_KP 0 // Dirección de EEPROM para guardar kp
 
 // === PID ===
-#define TIME 2
+#define TIME 1
 // === BOTONES ===
 unsigned long debounceDelay = 100;
 unsigned long lastDebounceTime1 = 0;
@@ -52,15 +52,20 @@ int suma = 0;
 
 // === PID ===
 float kp = 0.7;
-float ki = 0.0;
+float ki = 0.1;
 float kd = 2.0;
 float error = 0;
+float error2 = 0; 
+float error3 = 0;
+float error4 = 0;
+float error5 = 0; 
+float error6 = 0;
 float lastError = 0;
 float integral = 0;
 float derivative = 0;
 float setpoint = 350;
 int correccion = 0;
-int baseSpeed = 75;
+int baseSpeed = 70;
 
 // === MOTOR ===
 class Motor {
@@ -95,13 +100,40 @@ Motor M1 = Motor(PINA1, PINB1);
 Motor M2 = Motor(PINB2, PINA2);
 
 // === PID ===
+
+float calcularKp(int p){
+if (p >= 650 && p <= 50)return kp * 5;
+else return kp;
+}
+
 int calcularPID(int lectura) {
   error = setpoint - lectura;
-  integral += error;
+  integral = error + error2 + error3 + error4 + error5 + error6;
   derivative = error - lastError;
   lastError = error;
-  return kp * error + ki * integral + kd * derivative;
+  error6 = error5;
+  error5 = error4;
+  error4 = error3;
+  error3 = error2;
+  error2 = error;
+  return (calcularKp(lectura) * error + ki * integral + kd * derivative);
 }
+
+void girro(int p, int velz, int veld){
+  if(p >= 650){
+    M2.setSpeed(0);
+    M1.setSpeed(200);
+  }
+  else if(p <= 50){
+    M2.setSpeed(200);
+    M1.setSpeed(0);
+  }
+  else{
+    M2.setSpeed(constrain(velz, -255, 255));
+    M1.setSpeed(constrain(veld, -255, 255));
+  }
+}
+
 
 // === CALIBRACIÓN DE SENSORES ===
 void calibrarSensores() {
@@ -261,9 +293,11 @@ void loop() {
   // Control de motores
   int velocidadIzquierda = baseSpeed + correccion;
   int velocidadDerecha  = baseSpeed - correccion;
-
+  //girro(pos, velocidadIzquierda, velocidadDerecha);
+  
   M2.setSpeed(constrain(velocidadIzquierda, -255, 255));
   M1.setSpeed(constrain(velocidadDerecha, -255, 255));
+  
 
   // === BOTÓN BOTTOM2: Aumentar kp ===
   bool currentState2 = digitalRead(BOTTOM2);
