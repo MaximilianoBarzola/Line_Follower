@@ -65,7 +65,7 @@ float integral = 0;
 float derivative = 0;
 float setpoint = 350;
 int correccion = 0;
-int baseSpeed = 70;
+int baseSpeed = 120;
 
 // === MOTOR ===
 class Motor {
@@ -79,19 +79,26 @@ class Motor {
     void begin() {
       pinMode(pinA, OUTPUT);
       pinMode(pinB, OUTPUT);
+      // Inicializar en modo frenado activo (HIGH-HIGH)
+      digitalWrite(pinA, HIGH);
+      digitalWrite(pinB, HIGH);
     }
 
     void setSpeed(int speed) {
       speed = constrain(speed, -255, 255);
+      
       if (speed > 0) {
-        analogWrite(pinA, speed);
-        analogWrite(pinB, 0);
+        // Forward PWM, slow decay: 1 (HIGH) + PWM
+        digitalWrite(pinA, HIGH);
+        analogWrite(pinB, 255 - speed); // Invertimos el PWM para slow decay
       } else if (speed < 0) {
-        analogWrite(pinA, 0);
-        analogWrite(pinB, -speed);
+        // Reverse PWM, slow decay: PWM + 1 (HIGH)
+        analogWrite(pinA, 255 + speed); // Invertimos el PWM para slow decay (speed es negativo)
+        digitalWrite(pinB, HIGH);
       } else {
-        analogWrite(pinA, 0);
-        analogWrite(pinB, 0);
+        // Frenado activo: ambos HIGH
+        digitalWrite(pinA, HIGH);
+        digitalWrite(pinB, HIGH);
       }
     }
 };
@@ -267,20 +274,18 @@ void loop() {
   }
 
   // Calcular posición
-  if (suma > 0) {
-    pos = sumap / suma;
-  } else {
-    pos = -1;
-  }
+  
+  pos = sumap / suma;
+
 
   if (pos == -1) {
-    if (poslast <= 100) pos = 0;
-    else if (poslast >= 700) pos = 700;
-    else {
-      pos = 350;
-      integral = 0;
-      lastError = 0;
-    }
+    if (poslast <= 200) pos = 0;
+    else if (poslast >= 500) pos = 700;
+//    else {
+//      pos = 350;
+//      integral = 0;
+//      lastError = 0;
+//    }
   }
   poslast = pos;
 
