@@ -21,7 +21,7 @@
 #endif
 
 // === EEPROM ===
-#define EEPROM_ADDR_KP 0 // Dirección de EEPROM para guardar kp
+#define EEPROM_ADDR_KP 10 // Dirección de EEPROM para guardar kp
 
 // === PID ===
 #define TIME 1
@@ -53,7 +53,7 @@ int suma = 0;
 // === PID ===
 float kp = 0.7;
 float ki = 0.1;
-float kd = 2.0;
+float kd = 4.0;
 float error = 0;
 float error2 = 0; 
 float error3 = 0;
@@ -65,7 +65,7 @@ float integral = 0;
 float derivative = 0;
 float setpoint = 350;
 int correccion = 0;
-int baseSpeed = 120;
+int baseSpeed = 90;
 
 // === MOTOR ===
 class Motor {
@@ -109,7 +109,7 @@ Motor M2 = Motor(PINB2, PINA2);
 // === PID ===
 
 float calcularKp(int p){
-if (p >= 650 && p <= 50)return kp * 5;
+if (p >= 600 && p <= 100)return kp * 5;
 else return kp;
 }
 
