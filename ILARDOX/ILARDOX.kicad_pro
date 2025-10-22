@@ -229,7 +229,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -415,6 +415,10 @@
     [
       "4120096e-cabc-41e5-b929-47a0d7dcb660",
       "H BRIDGE"
+    ],
+    [
+      "e7da01f4-37e3-4008-91d4-08715b321439",
+      "EEPROM"
     ]
   ],
   "text_variables": {}
